@@ -13,4 +13,4 @@ int generate_pkcs12_legacy(const char* pass_phrase,
                            unsigned char** out_pkcs12,
                            int* out_pkcs12_len);
 
-#endif /* OPENSSL_HELPER_H */
+#endif /* OpenSSLGeneratePkcs12Legacy */
