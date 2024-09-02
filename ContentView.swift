@@ -97,7 +97,7 @@ struct ContentView: View {
 
         do {
             let data = try Data(contentsOf: fileURL)
-            let opensslProxy = OpenSSlWrapper()
+            let opensslProxy = OpenSSLCryptoOperationsWrapper()
 
             guard let pkcs12Data = opensslProxy.createPKCS12(fromPKCS12Data: data,
                                                              originalPassphrase: passphrase,

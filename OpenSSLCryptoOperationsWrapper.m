@@ -1,16 +1,18 @@
 #import <Foundation/Foundation.h>
-#include "OpenSSlWrapper.h"
-#include "OpenSSLHelper.h"
-#include "openssl/bio.h"
-#include "openssl/pkcs12.h"
-#include "openssl/x509.h"
 
-@implementation OpenSSlWrapper
+#include <openssl/bio.h>
+#include <openssl/pkcs12.h>
+#include <openssl/x509.h>
+
+#include "OpenSSLCryptoOperationsWrapper.h"
+#include "OpenSSLGeneratePkcs12Legacy.h"
+
+@implementation OpenSSLCryptoOperationsWrapper
 
 - (nullable NSData *)createPKCS12FromPKCS12Data:(nonnull NSData *)pkcs12Data
                              originalPassphrase:(nonnull NSString *)originalPassphrase
                                   newPassphrase:(nonnull NSString *)newPassphrase
-                                   name:(nonnull NSString *)name {
+                                           name:(nonnull NSString *)name {
     const char* passOriginal = [originalPassphrase UTF8String];
     const char* passNew = [newPassphrase UTF8String];
     const char* friendlyName = [name UTF8String];;
@@ -43,7 +45,7 @@
     unsigned char* outPKCS12 = NULL;
     int outPKCS12Len = 0;
 
-    int result = generate_pkcs12(passNew, friendlyName, pkey, cert, ca, &outPKCS12, &outPKCS12Len);
+    int result = generate_pkcs12_legacy(passNew, friendlyName, pkey, cert, ca, &outPKCS12, &outPKCS12Len);
 
     // Clean up
     EVP_PKEY_free(pkey);

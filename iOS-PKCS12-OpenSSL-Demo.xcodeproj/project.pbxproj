@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		934357252C851DE90075845C /* OpenSSlWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 934357212C851DE80075845C /* OpenSSlWrapper.h */; };
-		934357262C851DE90075845C /* OpenSSLHelper.c in Sources */ = {isa = PBXBuildFile; fileRef = 934357222C851DE90075845C /* OpenSSLHelper.c */; };
-		934357272C851DE90075845C /* OpenSSLHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 934357232C851DE90075845C /* OpenSSLHelper.h */; };
-		934357282C851DE90075845C /* OpenSSlWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 934357242C851DE90075845C /* OpenSSlWrapper.m */; };
+		934357252C851DE90075845C /* OpenSSLCryptoOperationsWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 934357212C851DE80075845C /* OpenSSLCryptoOperationsWrapper.h */; };
+		934357262C851DE90075845C /* OpenSSLGeneratePkcs12Legacy.c in Sources */ = {isa = PBXBuildFile; fileRef = 934357222C851DE90075845C /* OpenSSLGeneratePkcs12Legacy.c */; };
+		934357272C851DE90075845C /* OpenSSLGeneratePkcs12Legacy.h in Headers */ = {isa = PBXBuildFile; fileRef = 934357232C851DE90075845C /* OpenSSLGeneratePkcs12Legacy.h */; };
+		934357282C851DE90075845C /* OpenSSLCryptoOperationsWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 934357242C851DE90075845C /* OpenSSLCryptoOperationsWrapper.m */; };
 		934357292C851DFB0075845C /* iOS-PKCS12-OpenSSL-Demo-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 934703BE2C8514DB00597D3A /* iOS-PKCS12-OpenSSL-Demo-Bridging-Header.h */; };
 		9343572B2C851E2F0075845C /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9343572A2C851E2F0075845C /* libcrypto.a */; };
 		9343572D2C851EA70075845C /* SAMPLE.p12 in Resources */ = {isa = PBXBuildFile; fileRef = 9343572C2C851EA70075845C /* SAMPLE.p12 */; };
@@ -46,10 +46,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		934357212C851DE80075845C /* OpenSSlWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenSSlWrapper.h; sourceTree = "<group>"; };
-		934357222C851DE90075845C /* OpenSSLHelper.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = OpenSSLHelper.c; sourceTree = "<group>"; };
-		934357232C851DE90075845C /* OpenSSLHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenSSLHelper.h; sourceTree = "<group>"; };
-		934357242C851DE90075845C /* OpenSSlWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenSSlWrapper.m; sourceTree = "<group>"; };
+		934357212C851DE80075845C /* OpenSSLCryptoOperationsWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenSSLCryptoOperationsWrapper.h; sourceTree = "<group>"; };
+		934357222C851DE90075845C /* OpenSSLGeneratePkcs12Legacy.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = OpenSSLGeneratePkcs12Legacy.c; sourceTree = "<group>"; };
+		934357232C851DE90075845C /* OpenSSLGeneratePkcs12Legacy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenSSLGeneratePkcs12Legacy.h; sourceTree = "<group>"; };
+		934357242C851DE90075845C /* OpenSSLCryptoOperationsWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenSSLCryptoOperationsWrapper.m; sourceTree = "<group>"; };
 		9343572A2C851E2F0075845C /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrypto.a; sourceTree = "<group>"; };
 		9343572C2C851EA70075845C /* SAMPLE.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = SAMPLE.p12; sourceTree = "<group>"; };
 		934703AA2C8513A100597D3A /* iOS-PKCS12-OpenSSL-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-PKCS12-OpenSSL-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -242,10 +242,10 @@
 				934703BF2C8514DC00597D3A /* DemoApp.swift */,
 				934703C12C8514EE00597D3A /* ContentView.swift */,
 				934703BE2C8514DB00597D3A /* iOS-PKCS12-OpenSSL-Demo-Bridging-Header.h */,
-				934357222C851DE90075845C /* OpenSSLHelper.c */,
-				934357232C851DE90075845C /* OpenSSLHelper.h */,
-				934357212C851DE80075845C /* OpenSSlWrapper.h */,
-				934357242C851DE90075845C /* OpenSSlWrapper.m */,
+				934357212C851DE80075845C /* OpenSSLCryptoOperationsWrapper.h */,
+				934357242C851DE90075845C /* OpenSSLCryptoOperationsWrapper.m */,
+				934357232C851DE90075845C /* OpenSSLGeneratePkcs12Legacy.h */,
+				934357222C851DE90075845C /* OpenSSLGeneratePkcs12Legacy.c */,
 				934703C42C8515A600597D3A /* Preview Content */,
 				934703AB2C8513A100597D3A /* Products */,
 			);
@@ -470,8 +470,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				934357292C851DFB0075845C /* iOS-PKCS12-OpenSSL-Demo-Bridging-Header.h in Headers */,
-				934357252C851DE90075845C /* OpenSSlWrapper.h in Headers */,
-				934357272C851DE90075845C /* OpenSSLHelper.h in Headers */,
+				934357252C851DE90075845C /* OpenSSLCryptoOperationsWrapper.h in Headers */,
+				934357272C851DE90075845C /* OpenSSLGeneratePkcs12Legacy.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -573,10 +573,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				934357282C851DE90075845C /* OpenSSlWrapper.m in Sources */,
+				934357282C851DE90075845C /* OpenSSLCryptoOperationsWrapper.m in Sources */,
 				934703C22C8514EE00597D3A /* ContentView.swift in Sources */,
 				934703C02C8514DC00597D3A /* DemoApp.swift in Sources */,
-				934357262C851DE90075845C /* OpenSSLHelper.c in Sources */,
+				934357262C851DE90075845C /* OpenSSLGeneratePkcs12Legacy.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

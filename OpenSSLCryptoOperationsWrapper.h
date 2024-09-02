@@ -2,7 +2,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface OpenSSlWrapper : NSObject
+@interface OpenSSLCryptoOperationsWrapper : NSObject
 
 - (nullable NSData *)createPKCS12FromPKCS12Data:(NSData *)pkcs12Data
                              originalPassphrase:(NSString *)originalPassphrase
