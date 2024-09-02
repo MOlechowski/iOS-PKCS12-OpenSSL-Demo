@@ -28,19 +28,21 @@ struct ContentView: View {
     }
 
     private func executePKCS12ImportProcess() {
-        obtainUserIdentity { result in
-            switch result {
-            case .success(let data):
-                self.pkcs12Data = data
-                savePKCS12DataToFile(data)
-                importPKCS12(data)
-            case .failure(let error):
-                self.errorMessage = "Error obtaining user identity: \(error.localizedDescription)"
+        DispatchQueue.global(qos: .userInitiated).async {
+            importPKCS12 { result in
+                switch result {
+                case .success(let data):
+                    self.pkcs12Data = data
+                    savePKCS12DataToFile(data)
+                    importPKCS12(data)
+                case .failure(let error):
+                    self.errorMessage = "Error obtaining user identity: \(error.localizedDescription)"
+                }
             }
         }
     }
 
-    private func obtainUserIdentity(completionHandler: @escaping (Result<Data, Error>) -> Void) {
+    private func importPKCS12(completionHandler: @escaping (Result<Data, Error>) -> Void) {
         guard let path = Bundle.main.path(forResource: fileName, ofType: fileType) else {
             completionHandler(.failure(NSError(domain: "FileError", code: 0, userInfo: [NSLocalizedDescriptionKey: "File not found"])))
             return
