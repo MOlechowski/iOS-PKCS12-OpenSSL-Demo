@@ -3,5 +3,5 @@ This project demonstrates the use of OpenSSL for handling PKCS12 certificates in
 
 ## Disclaimer
 
-**Important:** This project is currently configured to build and run only on the iOS Simulator. It has not been tested or configured for physical iOS devices.
+**Important:** This project is currently configured to build and run only on the iOS Simulator. It has not been tested on configured for physical iOS devices.
 
