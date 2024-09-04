@@ -43,6 +43,8 @@
 		9347048B2C85193F00597D3A /* x509_vfy.h.in in Resources */ = {isa = PBXBuildFile; fileRef = 9347046D2C85193F00597D3A /* x509_vfy.h.in */; };
 		9347048C2C85193F00597D3A /* x509.h.in in Resources */ = {isa = PBXBuildFile; fileRef = 9347046F2C85193F00597D3A /* x509.h.in */; };
 		9347048D2C85193F00597D3A /* x509v3.h.in in Resources */ = {isa = PBXBuildFile; fileRef = 934704722C85193F00597D3A /* x509v3.h.in */; };
+		935E88FE2C8909990089EA53 /* PKCS12ImportLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935E88FD2C8909990089EA53 /* PKCS12ImportLogger.swift */; };
+		935E89002C890A960089EA53 /* PKCS12ImportViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935E88FF2C890A960089EA53 /* PKCS12ImportViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -220,6 +222,8 @@
 		934704712C85193F00597D3A /* x509v3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x509v3.h; sourceTree = "<group>"; };
 		934704722C85193F00597D3A /* x509v3.h.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = x509v3.h.in; sourceTree = "<group>"; };
 		934704732C85193F00597D3A /* x509v3err.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x509v3err.h; sourceTree = "<group>"; };
+		935E88FD2C8909990089EA53 /* PKCS12ImportLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKCS12ImportLogger.swift; sourceTree = "<group>"; };
+		935E88FF2C890A960089EA53 /* PKCS12ImportViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKCS12ImportViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,6 +245,8 @@
 				934703C82C85189800597D3A /* security-assets */,
 				934703BF2C8514DC00597D3A /* DemoApp.swift */,
 				934703C12C8514EE00597D3A /* ContentView.swift */,
+				935E88FF2C890A960089EA53 /* PKCS12ImportViewModel.swift */,
+				935E88FD2C8909990089EA53 /* PKCS12ImportLogger.swift */,
 				934703BE2C8514DB00597D3A /* iOS-PKCS12-OpenSSL-Demo-Bridging-Header.h */,
 				934357212C851DE80075845C /* OpenSSLCryptoOperationsWrapper.h */,
 				934357242C851DE90075845C /* OpenSSLCryptoOperationsWrapper.m */,
@@ -576,7 +582,9 @@
 				934357282C851DE90075845C /* OpenSSLCryptoOperationsWrapper.m in Sources */,
 				934703C22C8514EE00597D3A /* ContentView.swift in Sources */,
 				934703C02C8514DC00597D3A /* DemoApp.swift in Sources */,
+				935E89002C890A960089EA53 /* PKCS12ImportViewModel.swift in Sources */,
 				934357262C851DE90075845C /* OpenSSLGeneratePkcs12Legacy.c in Sources */,
+				935E88FE2C8909990089EA53 /* PKCS12ImportLogger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
