@@ -14,11 +14,11 @@ class PKCS12ImportViewModel: ObservableObject {
         Task {
             do {
                 let data = try await createPKCS12()
+                savePKCS12DataToFile(data)
+                importPKCS12(data)
                 await MainActor.run {
                     self.isImportSuccessful = true
                 }
-                savePKCS12DataToFile(data)
-                importPKCS12(data)
             } catch {
                 await MainActor.run {
                     self.errorMessage = "Error obtaining user identity: \(error.localizedDescription)"
