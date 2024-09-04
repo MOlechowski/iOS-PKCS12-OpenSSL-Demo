@@ -15,7 +15,7 @@
 		9343572B2C851E2F0075845C /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9343572A2C851E2F0075845C /* libcrypto.a */; };
 		9343572D2C851EA70075845C /* SAMPLE.p12 in Resources */ = {isa = PBXBuildFile; fileRef = 9343572C2C851EA70075845C /* SAMPLE.p12 */; };
 		934703C02C8514DC00597D3A /* DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934703BF2C8514DC00597D3A /* DemoApp.swift */; };
-		934703C22C8514EE00597D3A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934703C12C8514EE00597D3A /* ContentView.swift */; };
+		934703C22C8514EE00597D3A /* PKCS12ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934703C12C8514EE00597D3A /* PKCS12ContentView.swift */; };
 		934703C52C8515A600597D3A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 934703C32C8515A600597D3A /* Preview Assets.xcassets */; };
 		934703C72C8515B100597D3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 934703C62C8515B100597D3A /* Assets.xcassets */; };
 		934704752C85193F00597D3A /* asn1.h.in in Resources */ = {isa = PBXBuildFile; fileRef = 934703D72C85193F00597D3A /* asn1.h.in */; };
@@ -57,7 +57,7 @@
 		934703AA2C8513A100597D3A /* iOS-PKCS12-OpenSSL-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-PKCS12-OpenSSL-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		934703BE2C8514DB00597D3A /* iOS-PKCS12-OpenSSL-Demo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOS-PKCS12-OpenSSL-Demo-Bridging-Header.h"; sourceTree = "<group>"; };
 		934703BF2C8514DC00597D3A /* DemoApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoApp.swift; sourceTree = "<group>"; };
-		934703C12C8514EE00597D3A /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		934703C12C8514EE00597D3A /* PKCS12ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKCS12ContentView.swift; sourceTree = "<group>"; };
 		934703C32C8515A600597D3A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		934703C62C8515B100597D3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		934703D22C85193F00597D3A /* __DECC_INCLUDE_EPILOGUE.H */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = __DECC_INCLUDE_EPILOGUE.H; sourceTree = "<group>"; };
@@ -244,7 +244,7 @@
 				934703D02C85190F00597D3A /* openssl-3.0.5 */,
 				934703C82C85189800597D3A /* security-assets */,
 				934703BF2C8514DC00597D3A /* DemoApp.swift */,
-				934703C12C8514EE00597D3A /* ContentView.swift */,
+				934703C12C8514EE00597D3A /* PKCS12ContentView.swift */,
 				935E88FF2C890A960089EA53 /* PKCS12ImportViewModel.swift */,
 				935E88FD2C8909990089EA53 /* PKCS12ImportLogger.swift */,
 				934703BE2C8514DB00597D3A /* iOS-PKCS12-OpenSSL-Demo-Bridging-Header.h */,
@@ -580,7 +580,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				934357282C851DE90075845C /* OpenSSLCryptoOperationsWrapper.m in Sources */,
-				934703C22C8514EE00597D3A /* ContentView.swift in Sources */,
+				934703C22C8514EE00597D3A /* PKCS12ContentView.swift in Sources */,
 				934703C02C8514DC00597D3A /* DemoApp.swift in Sources */,
 				935E89002C890A960089EA53 /* PKCS12ImportViewModel.swift in Sources */,
 				934357262C851DE90075845C /* OpenSSLGeneratePkcs12Legacy.c in Sources */,

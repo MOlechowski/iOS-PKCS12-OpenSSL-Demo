@@ -2,7 +2,7 @@ import SwiftUI
 import Foundation
 import Security
 
-struct ContentView: View {
+struct PKCS12ContentView: View {
     @StateObject private var viewModel = PKCS12ImportViewModel()
 
     var body: some View {
@@ -16,7 +16,7 @@ struct ContentView: View {
                     .foregroundColor(.red)
             }
 
-            if let pkcs12Data = viewModel.pkcs12Data {
+            if viewModel.isImportSuccessful {
                 Text("Succesfully imported pkcs \n check console for more info")
             }
         }
@@ -25,5 +25,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    PKCS12ContentView()
 }
